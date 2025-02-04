@@ -5,15 +5,13 @@ interface ModelSelectorProps {
   selectedModel: Model;
   otherSelectedModel: Model;
   onSelect: (model: Model) => void;
-  side: 'left' | 'right';
 }
 
 const ModelSelector = ({
   models,
   selectedModel,
   otherSelectedModel,
-  onSelect,
-  side
+  onSelect
 }: ModelSelectorProps) => {
   // Filter out the model selected in the other dropdown
   const availableModels = models.filter(

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { Model } from '../types/models';
 
 interface CapabilitiesComparisonProps {
@@ -21,11 +22,11 @@ const CapabilitiesComparison = ({ model1, model2 }: CapabilitiesComparisonProps)
           {/* Headers */}
           <div className="text-[#4a4a4a] font-medium">Metric</div>
           <div className="text-center">
-            <img src={model1.image} alt={model1.name} className="w-8 h-8 mx-auto mb-2" />
+            <Image src={model1.image} alt={model1.name} width={32} height={32} className="mx-auto mb-2" />
             <div className="font-bold text-[#1a73e8] text-sm">{model1.name}</div>
           </div>
           <div className="text-center">
-            <img src={model2.image} alt={model2.name} className="w-8 h-8 mx-auto mb-2" />
+            <Image src={model2.image} alt={model2.name} width={32} height={32} className="mx-auto mb-2" />
             <div className="font-bold text-[#1a73e8] text-sm">{model2.name}</div>
           </div>
 
@@ -78,7 +79,7 @@ const CapabilitiesComparison = ({ model1, model2 }: CapabilitiesComparisonProps)
           <div className="text-center font-bold text-[#1a73e8]">{model1.name}</div>
           <div className="text-center font-bold text-[#1a73e8]">{model2.name}</div>
 
-          {Object.entries(model1.specs).map(([key, value]) => (
+          {Object.entries(model1.specs).map(([key]) => (
             <React.Fragment key={key}>
               <div className="text-[#4a4a4a] capitalize">
                 {key.replace(/([A-Z])/g, ' $1').trim()}

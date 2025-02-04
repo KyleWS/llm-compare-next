@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Model } from '../types/models';
 
 interface ModelCardProps {
@@ -24,10 +25,12 @@ const ModelCard = ({ model, onClose, onTryModel }: ModelCardProps) => {
 
       {/* Model Image and Provider */}
       <div className="text-center mb-4">
-        <img
+        <Image
           src={model.image}
           alt={model.name}
-          className="w-[120px] h-[120px] object-contain mx-auto mb-2"
+          width={120}
+          height={120}
+          className="object-contain mx-auto mb-2"
         />
         <h2 className="text-xl font-bold text-[#1a1a1a] mb-1">{model.name}</h2>
         <span className="text-sm text-gray-600">by {model.provider}</span>
