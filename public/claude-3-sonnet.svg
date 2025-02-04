@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="128" cy="128" r="128" fill="#000000"/>
+  <path d="M128 64C92.6538 64 64 92.6538 64 128C64 163.346 92.6538 192 128 192C163.346 192 192 163.346 192 128C192 92.6538 163.346 64 128 64ZM128 176C101.49 176 80 154.51 80 128C80 101.49 101.49 80 128 80C154.51 80 176 101.49 176 128C176 154.51 154.51 176 128 176Z" fill="#7B61FF"/>
+  <path d="M128 96C110.327 96 96 110.327 96 128C96 145.673 110.327 160 128 160C145.673 160 160 145.673 160 128C160 110.327 145.673 96 128 96Z" fill="#7B61FF"/>
+  <text x="128" y="124" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="white">Claude</text>
+  <text x="128" y="148" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">3.5 Sonnet</text>
+</svg>
